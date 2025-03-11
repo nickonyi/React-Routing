@@ -12,7 +12,7 @@ export default function Profile() {
       <p>So how are you?</p>
       <Link to="/">Click here to go back</Link>
       <hr />
-      <h2>The profile visited is here</h2>
+      <h2>The profile visited iss here</h2>
       {name === 'popeye' ? (
         <Popeye />
       ) : name === 'spinach' ? (
