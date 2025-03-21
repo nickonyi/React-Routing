@@ -4,14 +4,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Profile from './components/profile';
-import Popeye from './components/popeye';
-import Spinach from './components/spinach';
-import DefaultProfile from './components/default';
+import ErrorPage from './components/errorpage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorPage />,
   },
   {
     path: 'profile/:profile',
