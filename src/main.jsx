@@ -6,6 +6,7 @@ import App from './App';
 import Profile from './components/profile';
 import Popeye from './components/popeye';
 import Spinach from './components/spinach';
+import DefaultProfile from './components/default';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     path: 'profile',
     element: <Profile />,
     children: [
+      { index: true, element: <DefaultProfile /> },
       { path: 'spinach', element: <Spinach /> },
       { path: 'popeye', element: <Popeye /> },
     ],
