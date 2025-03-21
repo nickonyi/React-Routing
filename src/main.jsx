@@ -14,13 +14,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: 'profile',
+    path: 'profile/:profile',
     element: <Profile />,
-    children: [
-      { index: true, element: <DefaultProfile /> },
-      { path: 'spinach', element: <Spinach /> },
-      { path: 'popeye', element: <Popeye /> },
-    ],
   },
 ]);
 
